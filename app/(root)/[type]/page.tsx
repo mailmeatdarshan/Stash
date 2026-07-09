@@ -5,6 +5,8 @@ import { Models } from "node-appwrite";
 import Card from "@/components/Card";
 import { getFileTypesParams } from "@/lib/utils";
 
+export const dynamic = "force-dynamic";
+
 const Page = async ({ searchParams, params }: SearchParamProps) => {
   const type = ((await params)?.type as string) || "";
   const searchText = ((await searchParams)?.query as string) || "";
